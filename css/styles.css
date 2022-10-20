@@ -9,14 +9,14 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --wight-color: #ffffff;
+  --white-color: #ffffff;
   --secondary-backgraund-color: #f5f4fa;
   --footer-backgraund-color: #2f303a;
 }
 
 body {
   color: var(--primary-text-color);
-  background-color: var(--wight-color);
+  background-color: var(--white-color);
   font-family: roboto, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
@@ -77,7 +77,7 @@ img {
   line-height: 1.19;
 }
 .logo.logo-footer {
-  color: var(--wight-color);
+  color: var(--white-color);
 }
 .logo-word {
   color: var(--accent-color);
@@ -138,19 +138,28 @@ img {
 }
 
 /* HERO */
-/* ТИМЧАСОВИЙ ФОНОВИЙ КОЛІР!!!!!!! */
 
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-
-  background-color: var(--footer-backgraund-color);
   text-align: center;
+}
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero-title {
   margin: 0 auto 30px;
   max-width: 696px;
-  color: var(--wight-color);
+  color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -184,7 +193,7 @@ img {
 .button.primary {
   padding: 10px 32px;
 
-  color: var(--wight-color);
+  color: var(--white-color);
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
@@ -203,14 +212,14 @@ img {
   line-height: 1.6;
 }
 .button.secondary.current {
-  color: var(--wight-color);
+  color: var(--white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button.secondary:hover,
 .button.secondary:focus {
-  color: var(--wight-color);
+  color: var(--white-color);
   background-color: var(--accent-color);
 }
 
@@ -225,6 +234,29 @@ img {
 }
 .feature-item {
   width: calc((100% - 90px) / 4);
+}
+.feature-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: red solid 1px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.icon-antenna::before {
+  background-image: url(../images/svg/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/svg/clock\ 1.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/svg/diagram\ 1.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/svg/astronaut.svg);
 }
 
 .feature-subtitle {
@@ -256,7 +288,7 @@ img {
 .team-card {
   width: calc((100% - 90px) / 4);
 
-  background-color: var(--wight-color);
+  background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -281,6 +313,69 @@ img {
   background-color: var(--secondary-backgraund-color);
 }
 
+.socials-list {
+  display: flex;
+  gap: 10px;
+  padding: 16px 30px 0 32px;
+}
+.social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: red solid 1px;
+  border-radius: 50%;
+}
+.instagram {
+  background-image: url(../images/svg/instagram\ 2.svg);
+}
+.twitter {
+  background-image: url(../images/svg/twitter\ 1.svg);
+}
+.facebook {
+  background-image: url(../images/svg/facebook\ 1.svg);
+}
+.linkedin {
+  background-image: url(../images/svg/linkedin\ 1.svg);
+}
+/* COSTOMERS */
+
+.costomers-list {
+  display: flex;
+  gap: 30px;
+}
+.costomer-item {
+  width: calc((100% - 150px) / 6);
+}
+
+.logo-costomer {
+  display: block;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.costomer1 {
+  background-image: url(../images/svg/Logo.svg);
+}
+.costomer2 {
+  background-image: url(../images/svg/Logo\(1\).svg);
+}
+.costomer3 {
+  background-image: url(../images/svg/Logo\(2\).svg);
+}
+.costomer4 {
+  background-image: url(../images/svg/Logo\(3\).svg);
+}
+.costomer5 {
+  background-image: url(../images/svg/Logo\(4\).svg);
+}
+.costomer6 {
+  background-image: url(../images/svg/Logo\(5\).svg);
+}
+
 /* FOOTER */
 
 .footer {
@@ -299,7 +394,7 @@ img {
   margin-bottom: 9px;
 }
 .map {
-  color: var(--wight-color);
+  color: var(--white-color);
   line-height: 1.71;
 }
 .contact {
