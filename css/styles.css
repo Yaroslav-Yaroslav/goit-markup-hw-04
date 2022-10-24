@@ -330,11 +330,9 @@ img {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
+  color: var(--white-color);
 }
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
-  fill: var(--white-color);
-}
+
 /* COSTOMERS */
 
 .costomers-list {
@@ -362,11 +360,9 @@ img {
 .costomer-link:hover,
 .costomer-link:focus {
   border-color: var(--accent-color);
+  color: var(--accent-color);
 }
-.costomer-link:hover .icon-costomer,
-.costomer-link:focus .icon-costomer {
-  fill: var(--accent-color);
-}
+
 
 /* FOOTER */
 .footer-container {
@@ -431,10 +427,9 @@ img {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  color: var(--white-color);
 }
 .footer-social-icon {
-  fill: currentColor;
+  fill: var(--white-color);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
